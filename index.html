@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abinash Narendra | Personal Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 18px 8%;
+      background: rgba(11,11,15,0.9);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #00e5ff;
+    }
+
+    section {
+      padding: 100px 8%;
+      min-height: 100vh;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: radial-gradient(circle at top, #18202c, #0b0b0f 60%);
+    }
+
+    .hero h1 {
+      font-size: clamp(45px, 8vw, 85px);
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #00e5ff;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #bdbdbd;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 25px;
+      border-radius: 30px;
+      background: #00e5ff;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .outline {
+      background: transparent;
+      color: white;
+      border: 1px solid #00e5ff;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 45px;
+    }
+
+    .about {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      color: #cfcfcf;
+      font-size: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: #15151c;
+      padding: 30px;
+      border-radius: 18px;
+      border: 1px solid #252530;
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #00e5ff;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      color: #bbb;
+      margin-bottom: 25px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #07070a;
+      color: #888;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding: 15px 5%;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 12px;
+      }
+
+      section {
+        padding: 90px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Abinash.</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div>
+      <p>Hello, I'm</p>
+      <h1>Abinash <span>Narendra</span></h1>
+      <p>Student • Tech Enthusiast • Future Developer</p>
+
+      <a href="#about" class="btn">Explore My Portfolio</a>
+      <a href="#contact" class="btn outline">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="title">About Me</h2>
+
+    <div class="about">
+      <p>
+        Hello! I'm Abinash Narendra. Welcome to my personal portfolio website.
+        I am interested in technology, programming and creating new digital
+        projects. This website is a place where I can share my skills,
+        projects and journey.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="title">My Skills</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>HTML</h3>
+        <p>Building modern web pages and layouts.</p>
+      </div>
+
+      <div class="card">
+        <h3>CSS</h3>
+        <p>Creating responsive and attractive designs.</p>
+      </div>
+
+      <div class="card">
+        <h3>Python</h3>
+        <p>Programming and AI project development.</p>
+      </div>
+
+      <div class="card">
+        <h3>AI</h3>
+        <p>Exploring artificial intelligence and automation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="title">My Projects</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Personal AI</h3>
+        <p>A personal AI assistant project focused on voice interaction.</p>
+      </div>
+
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>This personal website you're currently viewing.</p>
+      </div>
+
+      <div class="card">
+        <h3>Future Projects</h3>
+        <p>More exciting technology projects coming soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="title">Contact Me</h2>
+
+    <p>Want to connect? You can reach me through my social profiles.</p>
+
+    <a href="#" class="btn">Instagram</a>
+    <a href="#" class="btn outline">GitHub</a>
+  </section>
+
+  <footer>
+    © 2026 Abinash Narendra. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
